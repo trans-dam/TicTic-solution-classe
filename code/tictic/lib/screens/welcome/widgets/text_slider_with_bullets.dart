@@ -26,22 +26,24 @@ class _TextSliderWithBulletsState extends State<TextSliderWithBullets> {
   @override
   Widget build(BuildContext context) {
     return Column(
-      children: [TextSlider(
-        pageController: _pageController,
-        currentIdx: _currentIdx,
-        items: _items,
-        onPageChanged: (int idx) {
-          setState(() {
-            _currentIdx = idx;
-          });
-        },
-      ),
+      children: [
+        TextSlider(
+          pageController: _pageController,
+          currentIdx: _currentIdx,
+          items: _items,
+          onPageChanged: (int idx) {
+            setState(() {
+              _currentIdx = idx;
+            });
+          },
+        ),
         SizedBox(height: kVerticalPadding),
         Bullets(
           items: _items,
           pageController: _pageController,
           currentIdx: _currentIdx,
-        )],
+        ),
+      ],
     );
   }
 }

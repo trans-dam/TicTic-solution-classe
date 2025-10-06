@@ -9,7 +9,7 @@ class TextSlider extends StatelessWidget {
     required this.pageController,
     required this.currentIdx,
     required this.items,
-    required this.onPageChanged
+    required this.onPageChanged,
   });
 
   final PageController pageController;
@@ -30,7 +30,11 @@ class TextSlider extends StatelessWidget {
         itemBuilder: (context, index) {
           return Padding(
             padding: const EdgeInsets.symmetric(horizontal: kHorizontalPadding),
-            child: Text(items[index], style: kTagLine),
+            child: Text(
+              items[index],
+              style: kTagLine,
+              textAlign: TextAlign.center,
+            ),
           );
         },
       ),
