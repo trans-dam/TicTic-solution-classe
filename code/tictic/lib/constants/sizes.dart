@@ -1,6 +1,10 @@
 const kLogoSizeRatioWelcome = 0.15;
 const kVerticalSpacing = 20.0;
 const kTextSliderHeight = 50.0;
+const kBorderRadius = 12.0;
+
+const kHorizontalPaddingXS = kHorizontalPaddingS / 2;
+const kVerticalPaddingXS = kVerticalPaddingS / 2;
 
 const kHorizontalPaddingS = kHorizontalPadding / 2;
 const kVerticalPaddingS = kVerticalPadding / 2;
