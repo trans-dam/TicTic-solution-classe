@@ -1,3 +1,11 @@
 {
-  "appTitle": "Application TicTic"
+  "appTitle": "Application TicTic",
+  "continueWithOutLogin": "Continuer sans compte",
+  "or": "ou",
+  "login": "Connexion",
+  "register": "Inscription",
+  "text_slide_1": "L’harmonie financière dans vos groupes, en toute simplicité !",
+  "text_slide_2": "Calculs instantanés, équité garantie avec TicTic !",
+  "text_slide_3": "Calculs fastidieux ? Non merci. Optez pour la simplicité avec TicTic !",
+  "text_slide_4": "TicTic : Vos dépenses partagées en toute simplicité !"
 }
