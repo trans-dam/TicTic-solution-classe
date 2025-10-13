@@ -131,6 +131,12 @@ abstract class AppLocalizations {
   /// **'Username'**
   String get username_label;
 
+  /// No description provided for @username_placeholder.
+  ///
+  /// In en, this message translates to:
+  /// **'JohnDoe'**
+  String get username_placeholder;
+
   /// No description provided for @text_slide_1.
   ///
   /// In en, this message translates to:

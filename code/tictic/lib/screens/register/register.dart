@@ -1,14 +1,16 @@
 import 'package:flutter/material.dart';
-import 'package:tictic/constants/colors.dart';
-import 'package:tictic/constants/fonts.dart';
 import 'package:tictic/constants/sizes.dart';
 import 'package:tictic/l10n/app_localizations.dart';
 import 'package:tictic/screens/scaffold_with_image.dart';
+import 'package:tictic/screens/welcome/widgets/logo_welcome.dart';
+import 'package:tictic/widgets/form/my_text_input.dart';
 
 class Register extends StatelessWidget {
-  const Register({super.key});
+  Register({super.key});
 
   static const String routeName = '/register';
+
+  final GlobalKey<FormState> _registerFormKey = GlobalKey<FormState>();
 
   @override
   Widget build(BuildContext context) {
@@ -28,38 +30,37 @@ class Register extends StatelessWidget {
                 ),
               ],
             ),
-            Form(
-              child: Padding(
-                padding: const EdgeInsets.symmetric(
-                  horizontal: kHorizontalPadding,
-                ),
+            SizedBox(height: kVerticalPaddingL),
+            LogoWelcome(),
+            SizedBox(height: kVerticalPaddingXL),
+            Padding(
+              padding: const EdgeInsets.symmetric(
+                horizontal: kHorizontalPadding,
+              ),
+              child: Form(
+                key: _registerFormKey,
                 child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  crossAxisAlignment: CrossAxisAlignment.end,
                   children: [
-                    TextFormField(
-                      decoration: InputDecoration(
-                        label: Container(
-                          padding: EdgeInsets.symmetric(
-                            horizontal: kHorizontalPaddingXS,
-                            vertical: kVerticalPaddingXS,
-                          ),
-                          decoration: BoxDecoration(color: kBackgroundColor, 
-                              borderRadius: BorderRadius.all(
-                              Radius.circular(kBorderRadius))),
-                          child: Text(
-                            AppLocalizations.of(context)!.username_label,
-                            style: kLabelStyle,
-                          ),
-                        ),
-                        enabledBorder: OutlineInputBorder(
-                          borderRadius: BorderRadius.circular(
-                            kBorderRadiusInput,
-                          ),
-                          borderSide: BorderSide(color: kBackgroundColor),
-                          gapPadding: 0,
-                        ),
-                        floatingLabelBehavior: FloatingLabelBehavior.always,
-                        fillColor: kBackgroundColor,
-                      ),
+                    MyTextInput(
+                      labelText: AppLocalizations.of(context)!.username_label,
+                      prefixIcon: Icon(Icons.person),
+                      hintText: AppLocalizations.of(
+                        context,
+                      )!.username_placeholder,
+                      validator: (value) {
+                        if(value == null || value.isEmpty) {
+                          return
+                        }
+                      },
+                    ),
+                    SizedBox(height: kVerticalPaddingL),
+                    ElevatedButton(
+                      onPressed: () {
+                        _registerFormKey.currentState?.validate();
+                      },
+                      child: Text(AppLocalizations.of(context)!.register),
                     ),
                   ],
                 ),

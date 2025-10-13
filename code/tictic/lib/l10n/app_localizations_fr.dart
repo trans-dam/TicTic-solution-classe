@@ -27,6 +27,9 @@ class AppLocalizationsFr extends AppLocalizations {
   String get username_label => 'Nom d\'utilisateur';
 
   @override
+  String get username_placeholder => 'JohnDoe';
+
+  @override
   String get text_slide_1 => 'L’harmonie financière dans vos groupes, en toute simplicité !';
 
   @override

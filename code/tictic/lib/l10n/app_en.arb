@@ -5,6 +5,17 @@
   "login": "Login",
   "register": "Register",
   "username_label": "Username",
+  "username_placeholder": "JohnDoe",
+  "form_field_required": "The field \"{field_name}\"is required",
+  "@form_field_required": {
+    "description": "Error message when a form field is required",
+    "placeholders": {
+      "field_name": {
+        "type": "String",
+        "example": "Username"
+      }
+    }
+  },
   "text_slide_1": "Financial harmony in your groups, made simple!",
   "text_slide_2": "Instant calculations, fairness guaranteed with TicTic!",
   "text_slide_3": "Tedious math? No thanks. Choose simplicity with TicTic!",

@@ -5,6 +5,8 @@ const kBorderRadius = 12.0;
 const kBorderRadiusInput = 24.0;
 const kDiverHeight = 10.0;
 
+const kBorderWidth = 2.0;
+
 const kHorizontalPaddingXS = kHorizontalPaddingS / 2;
 const kVerticalPaddingXS = kVerticalPaddingS / 2;
 
