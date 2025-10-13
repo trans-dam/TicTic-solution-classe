@@ -3,7 +3,6 @@ import 'package:flutter_localization/flutter_localization.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:tictic/l10n/app_localizations.dart';
 import 'package:tictic/routes.dart';
-import 'package:tictic/screens/welcome/welcome.dart';
 import './constants/colors.dart';
 
 Future<void> main() async {

@@ -125,6 +125,12 @@ abstract class AppLocalizations {
   /// **'Register'**
   String get register;
 
+  /// No description provided for @username_label.
+  ///
+  /// In en, this message translates to:
+  /// **'Username'**
+  String get username_label;
+
   /// No description provided for @text_slide_1.
   ///
   /// In en, this message translates to:

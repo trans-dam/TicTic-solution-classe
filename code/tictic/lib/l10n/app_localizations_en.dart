@@ -24,6 +24,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get register => 'Register';
 
   @override
+  String get username_label => 'Username';
+
+  @override
   String get text_slide_1 => 'Financial harmony in your groups, made simple!';
 
   @override
