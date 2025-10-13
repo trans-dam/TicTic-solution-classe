@@ -3,7 +3,9 @@ import 'package:tictic/constants/sizes.dart';
 import 'package:tictic/l10n/app_localizations.dart';
 import 'package:tictic/screens/scaffold_with_image.dart';
 import 'package:tictic/screens/welcome/widgets/logo_welcome.dart';
-import 'package:tictic/widgets/form/my_text_input.dart';
+import 'package:tictic/widgets/form/email_input.dart';
+import 'package:tictic/widgets/form/password_input.dart';
+import 'package:tictic/widgets/form/username_input.dart';
 
 class Register extends StatelessWidget {
   Register({super.key});
@@ -43,18 +45,11 @@ class Register extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.end,
                   children: [
-                    MyTextInput(
-                      labelText: AppLocalizations.of(context)!.username_label,
-                      prefixIcon: Icon(Icons.person),
-                      hintText: AppLocalizations.of(
-                        context,
-                      )!.username_placeholder,
-                      validator: (value) {
-                        if(value == null || value.isEmpty) {
-                          return
-                        }
-                      },
-                    ),
+                    UsernameInput(),
+                    SizedBox(height: kVerticalPaddingL),
+                    EmailInput(),
+                    SizedBox(height: kVerticalPaddingL),
+                    PasswordInput(),
                     SizedBox(height: kVerticalPaddingL),
                     ElevatedButton(
                       onPressed: () {

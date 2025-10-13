@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import '../../constants/colors.dart';
 import '../../constants/fonts.dart';
 import '../../constants/sizes.dart';
-import '../../l10n/app_localizations.dart';
 
 class MyTextInput extends StatelessWidget {
   const MyTextInput({
@@ -12,17 +11,23 @@ class MyTextInput extends StatelessWidget {
     required this.labelText,
     this.validator,
     this.hintText,
+    this.keyboardType,
+    this.obscureText = false,
   });
 
   final Widget? prefixIcon;
   final String? Function(String?)? validator;
   final String labelText;
   final String? hintText;
+  final TextInputType? keyboardType;
+  final bool obscureText;
 
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      keyboardType: keyboardType,
       validator: validator,
+      obscureText: obscureText,
       decoration: InputDecoration(
         prefixIcon: prefixIcon,
         label: Container(
