@@ -9,7 +9,8 @@
   "user_email_label": "E-mail",
   "user_email_placeholder": "john@doe.be",
   "user_password_label": "Password",
-  "already_have_account": "Already have an account? ",
+  "already_have_account": "Already have an account?",
+  "dont_have_account": "Don't have an account?",
   "form_field_required": "The field \"{field_name}\"is required.",
   "@form_field_required": {
     "description": "Error message when a form field is required",

@@ -158,8 +158,14 @@ abstract class AppLocalizations {
   /// No description provided for @already_have_account.
   ///
   /// In en, this message translates to:
-  /// **'Already have an account? '**
+  /// **'Already have an account?'**
   String get already_have_account;
+
+  /// No description provided for @dont_have_account.
+  ///
+  /// In en, this message translates to:
+  /// **'Don\'t have an account?'**
+  String get dont_have_account;
 
   /// Error message when a form field is required
   ///

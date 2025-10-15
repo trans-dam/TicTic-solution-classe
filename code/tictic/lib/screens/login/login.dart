@@ -2,20 +2,19 @@ import 'package:flutter/material.dart';
 import 'package:tictic/constants/fonts.dart';
 import 'package:tictic/constants/sizes.dart';
 import 'package:tictic/l10n/app_localizations.dart';
-import 'package:tictic/screens/login/login.dart';
+import 'package:tictic/screens/register/register.dart';
 import 'package:tictic/screens/scaffold_with_image.dart';
 import 'package:tictic/screens/welcome/widgets/logo_welcome.dart';
 import 'package:tictic/widgets/anchor.dart';
 import 'package:tictic/widgets/form/email_input.dart';
 import 'package:tictic/widgets/form/password_input.dart';
-import 'package:tictic/widgets/form/username_input.dart';
 
-class Register extends StatelessWidget {
-  Register({super.key});
+class Login extends StatelessWidget {
+  Login({super.key});
 
-  static const String routeName = '/register';
+  static const String routeName = '/login';
 
-  final GlobalKey<FormState> _registerFormKey = GlobalKey<FormState>();
+  final GlobalKey<FormState> _loginFormKey = GlobalKey<FormState>();
 
   @override
   Widget build(BuildContext context) {
@@ -43,22 +42,20 @@ class Register extends StatelessWidget {
                 horizontal: kHorizontalPadding,
               ),
               child: Form(
-                key: _registerFormKey,
+                key: _loginFormKey,
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   crossAxisAlignment: CrossAxisAlignment.end,
                   children: [
-                    UsernameInput(),
-                    SizedBox(height: kVerticalPaddingL),
                     EmailInput(),
                     SizedBox(height: kVerticalPaddingL),
                     PasswordInput(),
                     SizedBox(height: kVerticalPaddingL),
                     ElevatedButton(
                       onPressed: () {
-                        _registerFormKey.currentState?.validate();
+                        _loginFormKey.currentState?.validate();
                       },
-                      child: Text(AppLocalizations.of(context)!.register),
+                      child: Text(AppLocalizations.of(context)!.login),
                     ),
                   ],
                 ),
@@ -66,13 +63,13 @@ class Register extends StatelessWidget {
             ),
             Spacer(),
             Text(
-              AppLocalizations.of(context)!.already_have_account,
+              AppLocalizations.of(context)!.dont_have_account,
               style: kLabelStyle,
             ),
             Anchor(
-              text: AppLocalizations.of(context)!.login,
+              text: AppLocalizations.of(context)!.register,
               onTap: () {
-                Navigator.pushNamed(context, Login.routeName);
+                Navigator.pushNamed(context, Register.routeName);
               },
             ),
           ],

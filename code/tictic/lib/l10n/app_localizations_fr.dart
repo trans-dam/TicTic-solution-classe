@@ -39,7 +39,10 @@ class AppLocalizationsFr extends AppLocalizations {
   String get user_password_label => 'Mot de passe';
 
   @override
-  String get already_have_account => 'Vous avez déjà un compte ? ';
+  String get already_have_account => 'Vous avez déjà un compte ?';
+
+  @override
+  String get dont_have_account => 'Vous n\'avez pas de compte ?';
 
   @override
   String form_field_required(String field_name) {
