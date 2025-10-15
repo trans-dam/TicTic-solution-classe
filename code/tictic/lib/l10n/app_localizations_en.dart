@@ -39,6 +39,9 @@ class AppLocalizationsEn extends AppLocalizations {
   String get user_password_label => 'Password';
 
   @override
+  String get already_have_account => 'Already have an account? ';
+
+  @override
   String form_field_required(String field_name) {
     return 'The field \"$field_name\"is required.';
   }

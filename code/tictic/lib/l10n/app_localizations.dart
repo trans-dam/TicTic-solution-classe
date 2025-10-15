@@ -155,6 +155,12 @@ abstract class AppLocalizations {
   /// **'Password'**
   String get user_password_label;
 
+  /// No description provided for @already_have_account.
+  ///
+  /// In en, this message translates to:
+  /// **'Already have an account? '**
+  String get already_have_account;
+
   /// Error message when a form field is required
   ///
   /// In en, this message translates to:
