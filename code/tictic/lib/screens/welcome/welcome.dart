@@ -1,12 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:tictic/constants/sizes.dart';
 import 'package:tictic/screens/scaffold_with_image.dart';
 import 'package:tictic/screens/welcome/widgets/call_to_actions.dart';
-import 'package:tictic/screens/welcome/widgets/logo_welcome.dart';
-import 'package:tictic/screens/welcome/widgets/text_divider.dart';
+import 'package:tictic/widgets/logo_welcome.dart';
 import 'package:tictic/screens/welcome/widgets/text_slider_with_bullets.dart';
 
-import '../../constants/colors.dart';
 
 class Welcome extends StatelessWidget {
   const Welcome({super.key});
