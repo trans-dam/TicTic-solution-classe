@@ -11,6 +11,21 @@
   "user_password_label": "Password",
   "already_have_account": "Already have an account?",
   "dont_have_account": "Don't have an account?",
+  "wrong_password" : "Wrong password provided for that user",
+  "invalid_email": "This email is invalid",
+  "user_disabled": "Your account has been disabled",
+  "user_not_found" : "This user does not exist",
+  "email_already_in_use" : "This email is already in use",
+  "operation_not_allowed": "This operation is not allowed",
+  "account_exists_with_different_credential": "Wrong password provided for that user",
+  "invalid_credential": "Your account credential is not valid",
+  "weak_password": "Your password must be at least {nb} characters",
+  "@weak_password": {
+    "description": "Error message when the password is too short",
+    "placeholders": {
+      "nb": {}
+    }
+  },
   "form_field_required": "The field \"{field_name}\"is required.",
   "@form_field_required": {
     "description": "Error message when a form field is required",

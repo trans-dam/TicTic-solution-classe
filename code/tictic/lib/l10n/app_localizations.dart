@@ -167,6 +167,60 @@ abstract class AppLocalizations {
   /// **'Don\'t have an account?'**
   String get dont_have_account;
 
+  /// No description provided for @wrong_password.
+  ///
+  /// In en, this message translates to:
+  /// **'Wrong password provided for that user'**
+  String get wrong_password;
+
+  /// No description provided for @invalid_email.
+  ///
+  /// In en, this message translates to:
+  /// **'This email is invalid'**
+  String get invalid_email;
+
+  /// No description provided for @user_disabled.
+  ///
+  /// In en, this message translates to:
+  /// **'Your account has been disabled'**
+  String get user_disabled;
+
+  /// No description provided for @user_not_found.
+  ///
+  /// In en, this message translates to:
+  /// **'This user does not exist'**
+  String get user_not_found;
+
+  /// No description provided for @email_already_in_use.
+  ///
+  /// In en, this message translates to:
+  /// **'This email is already in use'**
+  String get email_already_in_use;
+
+  /// No description provided for @operation_not_allowed.
+  ///
+  /// In en, this message translates to:
+  /// **'This operation is not allowed'**
+  String get operation_not_allowed;
+
+  /// No description provided for @account_exists_with_different_credential.
+  ///
+  /// In en, this message translates to:
+  /// **'Wrong password provided for that user'**
+  String get account_exists_with_different_credential;
+
+  /// No description provided for @invalid_credential.
+  ///
+  /// In en, this message translates to:
+  /// **'Your account credential is not valid'**
+  String get invalid_credential;
+
+  /// Error message when the password is too short
+  ///
+  /// In en, this message translates to:
+  /// **'Your password must be at least {nb} characters'**
+  String weak_password(Object nb);
+
   /// Error message when a form field is required
   ///
   /// In en, this message translates to:
